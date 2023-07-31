@@ -1,7 +1,9 @@
+from datetime import datetime
 #Aula 01 - Python básico
 print("Hello, world!!!")
 nome = "Tatiana Alves"
 print("Seja bem-vindo ",nome,end="\n-----\n")
+import math
 print("O cruso de python contém ...")
 # aluno = input("informe seu nome: ")
 # print(type(aluno))
@@ -15,15 +17,19 @@ txt= """
     --Donec vel ultricies dui. Curabitur dapibus rutrum tortor non dictum. Ut sollicitudin rutrum mauris, a condimentum tellus condimentum sit amet. Vestibulum convallis ullamcorper nulla vitae pulvinar. Mauris fringilla, odio ac congue blandit, magna dui tempor ipsum, sed volutpat libero ipsum vel nisi.
 """
 print(txt)
+valor1 = 5
+valor2 = 12.4569
+print("Soma: ",valor1+valor2,"\n")
+print("Subtração",valor1-valor2,"\n")
+print("Multiplicação: ",valor1*valor2,"\n")
+print("Divisão: ",valor1/valor2,"\n")
+print("Divisão sem decimais ",valor1//valor2,"\n")
 
-
-a = 10500.99999
-b = a
-print(a)
-print(b)
-b=15
-print(f"{'Seja bem-vindo' : ^50}") 
-print('-----'*5)
-print(f'O valor é r$ {a:.2f}')
-
-print("este é o valor de a %d e este o de b %d"%(a,b))
+#f strings do python
+print(f"O 1º valor é {valor1:.2f} e o segundo valor é {math.trunc(valor2)}")
+print(f"O 1º valor é {valor1:.2f} e o segundo valor é {valor2:.2f} e soma é {valor1+valor2:.2f}")
+#usando marcadores
+print("O valor 1 é %s e o valor2 é %s"%(valor1,valor2))
+#Usando format
+print("O 1º valor é {} e o segundo valor é {}".format(valor1,valor2))
+print(datetime.today())
