@@ -27,7 +27,7 @@ print("Divisão sem decimais ",valor1//valor2,"\n")
 
 #alinhamentos
 print(f"{'Seja bem-vindo':^50}")
-
+print(f"{'Valor:':>20}{valor1:>20}")
 #f strings do python
 print(f"O 1º valor é {valor1:.2f} e o segundo valor é {math.trunc(valor2)}")
 print(f"O 1º valor é {valor1:.2f} e o segundo valor é {valor2:.2f} e soma é {valor1+valor2:.2f}")
@@ -39,3 +39,5 @@ print(f"{'Todas as variáveis':^50}")
 print(valor1,valor2,sep=" - ")
 print(datetime.today())
 print(math.sqrt(valor1))
+prtc =0.25
+print("O percentual é {:.2%}".format(prtc))
