@@ -15,6 +15,6 @@ print("Testando operador or com salario2:",salario1>salario2 or salario1>salario
 print("Testando operador or com salario2:",salario2>salario1 or salario2>salario3)
 print("Testando operador or com salario2:",salario3>salario1 or salario3>salario2)
 print("-"*25)
-print(f"{'Operador not(não)':^30}")
+print(f"{'Operador not(não)':^23}")
 print(f"{'--Trabalhando com negação de condições--'}")
 print("Testando salario3:",not(salario3>salario1 and salario3>salario2))
